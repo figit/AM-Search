@@ -1,0 +1,8 @@
+Notes for TJ:
+ 
+The purpose of this test is to get a feel for how he writes code in a non-interview setting. Since we understand that free-time is important to mental health, we recommend he does not spend too much time on the exercise and puts the majority of his effort on:
+- creating quality, sematic markup of the form and results
+- and, getting the query results via AJAX, parsing the JSON, and displaying them
+ 
+I’d rather see a working AJAX call and a simple list of results than an immaculately styled web page that doesn’t work. Additional styling while encouraged is not mandatory and he will not be scored negatively if he doesn’t spend a ton of time styling it.  
+ 

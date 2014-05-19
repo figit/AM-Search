@@ -1,0 +1,72 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: #205b9a;
+  padding: 1.5em;
+}
+@media only screen and (max-width: 25em) {
+  body {
+    background-image: url('../images/cat-vs-uni.jpg');
+    background-repeat: repeat;
+  }
+}
+body input[type="text"] {
+  padding: 0.8em;
+  width: 14em;
+  border: 0.1em solid #777777;
+  color: #777777;
+}
+body input[type="submit"] {
+  padding: 0.8em;
+  background-color: #fff;
+  border: 0.1em solid #777777;
+  color: #777777;
+}
+body .input-error-text {
+  display: none;
+  font-size: 0.9em;
+  color: #ee8414;
+}
+body .input-error {
+  border: 0.1em solid #ee8414;
+}
+body header,
+body section {
+  text-align: left;
+  margin: 0em auto;
+}
+body .results {
+  background-color: #f8f8f8;
+  padding: 1.2em 1.4em;
+  box-shadow: 0em 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+}
+body .results .loader {
+  display: none;
+  color: #205b9a;
+}
+body .results .sort-by {
+  float: right;
+}
+body .results .result {
+  font-size: 0.8em;
+  padding: 1em;
+  background-color: #fff;
+  border: 0.1em solid #777777;
+  list-style-type: none;
+  margin: 1.2em 0em;
+  line-height: 1.4em;
+  color: #252525;
+}
+body .results .result h3 {
+  margin: 0em 0em 0.5em 0em;
+  padding: 0em;
+}
+body .results .result li a {
+  text-decoration: none;
+  color: #ee8414;
+  font-weight: bold;
+}
+body .results .result li span {
+  font-weight: bold;
+}

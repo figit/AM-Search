@@ -1,0 +1,98 @@
+// Setup shared props
+@amBaseTextColor: #252525;
+@amOrange: #ee8414;
+@amBlue: #205b9a;
+@amDarkGray: #777777;
+@amLightGray: #f8f8f8;
+
+body {	
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background-color: @amBlue;
+	padding: 1.5em;
+
+	// EM in MQ avoids potential zoom pitfal
+	@media only screen and (max-width : 25em) { 
+		background-image:url('../images/cat-vs-uni.jpg');
+		background-repeat: repeat; 
+	}
+
+	input[type="text"]{
+		padding: 0.8em;
+		width: 14em;
+		border: 0.1em solid @amDarkGray;
+		color: @amDarkGray;
+	}
+	
+	input[type="submit"] {
+		padding: 0.8em;
+		background-color: #fff;
+		border: 0.1em solid @amDarkGray;
+		color: @amDarkGray;
+	}
+
+	.input-error-text {
+		display: none;
+		font-size: 0.9em;
+		color: @amOrange;
+	}
+
+	.input-error {
+		border: 0.1em solid @amOrange;
+	}
+
+	header, section {
+
+		text-align: left;
+		margin: 0em auto;
+	}
+
+	.results {
+		background-color: @amLightGray;
+		padding: 1.2em 1.4em;
+		box-shadow: 0em 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+
+		.loader {
+			display: none;
+			color: @amBlue;
+		}
+
+		.sort-by {
+			float:right;
+		}
+
+		.result {
+			font-size: 0.8em;
+			padding:1em;
+			background-color: #fff;
+			border: 0.1em solid @amDarkGray;
+			list-style-type: none;
+			margin:1.2em 0em;
+			line-height: 1.4em;
+			color: @amBaseTextColor;
+			
+			h3 {
+				margin: 0em 0em 0.5em 0em;
+				padding: 0em;
+			}
+
+			li {
+
+				a {
+					text-decoration: none;
+					color: @amOrange;
+					font-weight: bold;
+				}
+
+				span {
+					font-weight: bold;
+				}
+			}			
+		}
+	}
+}
+
+
+
+
